@@ -1,0 +1,93 @@
+CRITICAL - 2022-12-24 11:29:29 --> Undefined property: stdClass::$plan_name
+in APPPATH\Views\admin\plan-list.php on line 59.
+ 1 APPPATH\Views\admin\plan-list.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$plan_name', 'APPPATH\\Views\\admin\\plan-list.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\plan-list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/plan-list', [], true)
+ 5 APPPATH\Controllers\adminController.php(227): view('admin/plan-list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userDelete('52')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 11:30:28 --> Undefined property: stdClass::$plan_name
+in APPPATH\Views\admin\plan-list.php on line 59.
+ 1 APPPATH\Views\admin\plan-list.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$plan_name', 'APPPATH\\Views\\admin\\plan-list.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\plan-list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/plan-list', [], true)
+ 5 APPPATH\Controllers\adminController.php(227): view('admin/plan-list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userDelete('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 11:32:44 --> Undefined variable $userDetail
+in APPPATH\Views\admin\user-list.php on line 37.
+ 1 APPPATH\Views\admin\user-list.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userDetail', 'APPPATH\\Views\\admin\\user-list.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\user-list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/user-list', [], true)
+ 5 APPPATH\Controllers\adminController.php(227): view('admin/user-list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userDelete('53')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 11:34:20 --> Attempt to read property "id" on null
+in APPPATH\Views\admin\plan-edit.php on line 44.
+ 1 APPPATH\Views\admin\plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Views\\admin\\plan-edit.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\plan-edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH\Controllers\adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH\\assets2', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 11:34:20 --> Attempt to read property "id" on null
+in APPPATH\Views\admin\plan-edit.php on line 44.
+ 1 APPPATH\Views\admin\plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Views\\admin\\plan-edit.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\plan-edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH\Controllers\adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->planEdit('assets222', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 11:34:20 --> Attempt to read property "id" on null
+in APPPATH\Views\admin\plan-edit.php on line 44.
+ 1 APPPATH\Views\admin\plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Views\\admin\\plan-edit.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\plan-edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH\Controllers\adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH\\assets2', 'img', 'profile-img.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 11:34:20 --> Attempt to read property "id" on null
+in APPPATH\Views\admin\plan-edit.php on line 44.
+ 1 APPPATH\Views\admin\plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Views\\admin\\plan-edit.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\plan-edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH\Controllers\adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH\\assets2', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 19:52:53 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\user/adminController::logincheck
+in SYSTEMPATH\Router\Router.php on line 466.
+ 1 SYSTEMPATH\Router\Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\user/adminController::logincheck')
+ 2 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard/logincheck')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('dashboard/logincheck')
+ 4 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 19:53:22 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\user/adminController::logincheck
+in SYSTEMPATH\Router\Router.php on line 466.
+ 1 SYSTEMPATH\Router\Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\user/adminController::logincheck')
+ 2 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard/logincheck')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('dashboard/logincheck')
+ 4 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

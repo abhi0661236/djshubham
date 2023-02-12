@@ -1,0 +1,1088 @@
+ERROR - 2022-12-22 00:00:51 --> mysqli_sql_exception: Column 'plan_name' cannot be null in /opt/lampp/htdocs/data-search/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/data-search/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pl...', 0)
+#1 /opt/lampp/htdocs/data-search/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pl...')
+#2 /opt/lampp/htdocs/data-search/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pl...')
+#3 /opt/lampp/htdocs/data-search/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pl...', Array, false)
+#4 /opt/lampp/htdocs/data-search/app/Controllers/adminController.php(139): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/data-search/system/CodeIgniter.php(927): App\Controllers\adminController->planAdd()
+#6 /opt/lampp/htdocs/data-search/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+#7 /opt/lampp/htdocs/data-search/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/data-search/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-22 00:00:51 --> Column 'plan_name' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `plandetail` (`plan_name`, `plan_validity`, `plan_price`, `status`) VALUES (NULL, NULL, NULL, 1)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `plandetail` (`plan_name`, `plan_validity`, `plan_price`, `status`) VALUES (NULL, NULL, NULL, 1)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `plandetail` (`plan_name`, `plan_validity`, `plan_price`, `status`) VALUES (NULL, NULL, NULL, 1)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `plandetail` (`plan_name`, `plan_validity`, `plan_price`, `status`) VALUES (:plan_name:, :plan_validity:, :plan_price:, :status:)', [...], false)
+ 5 APPPATH/Controllers/adminController.php(139): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planAdd()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-22 00:00:55 --> mysqli_sql_exception: Column 'plan_name' cannot be null in /opt/lampp/htdocs/data-search/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/data-search/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pl...', 0)
+#1 /opt/lampp/htdocs/data-search/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pl...')
+#2 /opt/lampp/htdocs/data-search/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pl...')
+#3 /opt/lampp/htdocs/data-search/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pl...', Array, false)
+#4 /opt/lampp/htdocs/data-search/app/Controllers/adminController.php(139): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/data-search/system/CodeIgniter.php(927): App\Controllers\adminController->planAdd()
+#6 /opt/lampp/htdocs/data-search/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+#7 /opt/lampp/htdocs/data-search/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/data-search/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-22 00:00:55 --> Column 'plan_name' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `plandetail` (`plan_name`, `plan_validity`, `plan_price`, `status`) VALUES (NULL, NULL, NULL, 1)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `plandetail` (`plan_name`, `plan_validity`, `plan_price`, `status`) VALUES (NULL, NULL, NULL, 1)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `plandetail` (`plan_name`, `plan_validity`, `plan_price`, `status`) VALUES (NULL, NULL, NULL, 1)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `plandetail` (`plan_name`, `plan_validity`, `plan_price`, `status`) VALUES (:plan_name:, :plan_validity:, :plan_price:, :status:)', [...], false)
+ 5 APPPATH/Controllers/adminController.php(139): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planAdd()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 00:01:03 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\user/adminController::logincheck
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\user/adminController::logincheck')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard/logincheck')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('dashboard/logincheck')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 00:01:31 --> Invalid file: ccd/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ccd/index.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('ccd/index', [], true)
+ 3 APPPATH/Controllers/dataController.php(10): view('ccd/index')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\dataController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dataController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 00:01:34 --> Invalid file: ccd/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ccd/index.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('ccd/index', [], true)
+ 3 APPPATH/Controllers/dataController.php(10): view('ccd/index')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\dataController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dataController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 00:02:15 --> Invalid file: ccd/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ccd/index.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('ccd/index', [], true)
+ 3 APPPATH/Controllers/dataController.php(10): view('ccd/index')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\dataController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dataController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 00:05:45 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\user/adminController::logincheck
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\user/adminController::logincheck')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard/logincheck')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('dashboard/logincheck')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 00:06:32 --> Undefined variable $crimename
+in APPPATH/Views/admin/plan-list.php on line 53.
+ 1 APPPATH/Views/admin/plan-list.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $crimename', 'APPPATH/Views/admin/plan-list.php', 53)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-list', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 00:07:15 --> Undefined variable $crimename
+in APPPATH/Views/admin/plan-list.php on line 53.
+ 1 APPPATH/Views/admin/plan-list.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $crimename', 'APPPATH/Views/admin/plan-list.php', 53)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-list', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 00:07:59 --> Undefined property: stdClass::$category
+in APPPATH/Views/admin/plan-list.php on line 59.
+ 1 APPPATH/Views/admin/plan-list.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$category', 'APPPATH/Views/admin/plan-list.php', 59)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-list', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 00:08:38 --> Undefined property: stdClass::$plan_validiity
+in APPPATH/Views/admin/plan-list.php on line 60.
+ 1 APPPATH/Views/admin/plan-list.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$plan_validiity', 'APPPATH/Views/admin/plan-list.php', 60)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-list', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 00:09:51 --> Undefined property: stdClass::$category
+in APPPATH/Views/admin/plan-list.php on line 63.
+ 1 APPPATH/Views/admin/plan-list.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$category', 'APPPATH/Views/admin/plan-list.php', 63)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-list', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:26:41 --> Undefined variable $planEdit
+in APPPATH/Views/admin/plan-edit.php on line 6.
+ 1 APPPATH/Views/admin/plan-edit.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $planEdit', 'APPPATH/Views/admin/plan-edit.php', 6)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(151): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('2')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:27:08 --> Attempt to read property "plan_name" on null
+in APPPATH/Views/admin/plan-edit.php on line 47.
+ 1 APPPATH/Views/admin/plan-edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "plan_name" on null', 'APPPATH/Views/admin/plan-edit.php', 47)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(151): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:27:08 --> Attempt to read property "plan_name" on null
+in APPPATH/Views/admin/plan-edit.php on line 47.
+ 1 APPPATH/Views/admin/plan-edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "plan_name" on null', 'APPPATH/Views/admin/plan-edit.php', 47)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(151): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('assets222', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:27:08 --> Attempt to read property "plan_name" on null
+in APPPATH/Views/admin/plan-edit.php on line 47.
+ 1 APPPATH/Views/admin/plan-edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "plan_name" on null', 'APPPATH/Views/admin/plan-edit.php', 47)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(151): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:27:08 --> Attempt to read property "plan_name" on null
+in APPPATH/Views/admin/plan-edit.php on line 47.
+ 1 APPPATH/Views/admin/plan-edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "plan_name" on null', 'APPPATH/Views/admin/plan-edit.php', 47)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(151): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'profile-img.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:27:22 --> Attempt to read property "plan_name" on null
+in APPPATH/Views/admin/plan-edit.php on line 47.
+ 1 APPPATH/Views/admin/plan-edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "plan_name" on null', 'APPPATH/Views/admin/plan-edit.php', 47)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(151): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:27:22 --> Attempt to read property "plan_name" on null
+in APPPATH/Views/admin/plan-edit.php on line 47.
+ 1 APPPATH/Views/admin/plan-edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "plan_name" on null', 'APPPATH/Views/admin/plan-edit.php', 47)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(151): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('assets222', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:27:22 --> Attempt to read property "plan_name" on null
+in APPPATH/Views/admin/plan-edit.php on line 47.
+ 1 APPPATH/Views/admin/plan-edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "plan_name" on null', 'APPPATH/Views/admin/plan-edit.php', 47)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(151): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'profile-img.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:27:22 --> Attempt to read property "plan_name" on null
+in APPPATH/Views/admin/plan-edit.php on line 47.
+ 1 APPPATH/Views/admin/plan-edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "plan_name" on null', 'APPPATH/Views/admin/plan-edit.php', 47)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(151): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:47:47 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(154): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:47:47 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(154): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('assets222', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:47:47 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(154): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'profile-img.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:47:47 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(154): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:50:00 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:50:00 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('assets222', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:50:00 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'profile-img.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:50:00 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:50:22 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:50:23 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('assets222', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:50:23 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'profile-img.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:50:23 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-22 01:57:40 --> mysqli_sql_exception: Column 'plan_name' cannot be null in /opt/lampp/htdocs/data-search/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/data-search/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `pl...', 0)
+#1 /opt/lampp/htdocs/data-search/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pl...')
+#2 /opt/lampp/htdocs/data-search/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pl...')
+#3 /opt/lampp/htdocs/data-search/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pl...', Array, false)
+#4 /opt/lampp/htdocs/data-search/app/Controllers/adminController.php(138): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/data-search/system/CodeIgniter.php(927): App\Controllers\adminController->planAdd()
+#6 /opt/lampp/htdocs/data-search/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+#7 /opt/lampp/htdocs/data-search/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/data-search/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-22 01:57:40 --> Column 'plan_name' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `plandetail` (`plan_name`, `plan_validity`, `plan_price`, `status`) VALUES (NULL, NULL, NULL, 1)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `plandetail` (`plan_name`, `plan_validity`, `plan_price`, `status`) VALUES (NULL, NULL, NULL, 1)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `plandetail` (`plan_name`, `plan_validity`, `plan_price`, `status`) VALUES (NULL, NULL, NULL, 1)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `plandetail` (`plan_name`, `plan_validity`, `plan_price`, `status`) VALUES (:plan_name:, :plan_validity:, :plan_price:, :status:)', [...], false)
+ 5 APPPATH/Controllers/adminController.php(138): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planAdd()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:57:49 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\user/adminController::logincheck
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\user/adminController::logincheck')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard/logincheck')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('dashboard/logincheck')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 01:59:39 --> Cannot redeclare App\Controllers\adminController::planEdit()
+in APPPATH/Controllers/adminController.php on line 175.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-22 02:04:39 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 02:04:39 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('assets222', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 02:04:39 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'profile-img.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 02:04:39 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 02:05:17 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'messages-1.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 02:05:17 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('assets222', 'img', 'messages-2.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 02:05:17 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'profile-img.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 02:05:17 --> Attempt to read property "id" on null
+in APPPATH/Views/admin/plan-edit.php on line 44.
+ 1 APPPATH/Views/admin/plan-edit.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH/Views/admin/plan-edit.php', 44)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/plan-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/plan-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(168): view('admin/plan-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->planEdit('FCPATH/assets2', 'img', 'messages-3.jpg')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-22 15:13:36 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\data-search\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\data-search\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'dataserach', 3306, '', 0)
+#1 C:\xampp\htdocs\data-search\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\data-search\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\data-search\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\data-search\app\Controllers\dataController.php(55): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\data-search\system\CodeIgniter.php(927): App\Controllers\dataController->loginck()
+#6 C:\xampp\htdocs\data-search\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dataController))
+#7 C:\xampp\htdocs\data-search\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\data-search\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\data-search\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\data-search\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\data-search\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\data-search\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\data-search\app\Controllers\dataController.php(55): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\data-search\system\CodeIgniter.php(927): App\Controllers\dataController->loginck()
+#5 C:\xampp\htdocs\data-search\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dataController))
+#6 C:\xampp\htdocs\data-search\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\data-search\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-22 15:13:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admintbl`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Controllers\dataController.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\dataController->loginck()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dataController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:09:27 --> Undefined array key "device_id"
+in APPPATH\Controllers\apiController.php on line 53.
+ 1 APPPATH\Controllers\apiController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "device_id"', 'APPPATH\\Controllers\\apiController.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:09:50 --> Undefined array key "device_id"
+in APPPATH\Controllers\apiController.php on line 53.
+ 1 APPPATH\Controllers\apiController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "device_id"', 'APPPATH\\Controllers\\apiController.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:15:10 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:15:51 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:15:53 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:16:37 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:19:58 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:20:09 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:20:10 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:20:17 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:20:36 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:26:08 --> syntax error, unexpected single-quoted string "Result", expecting ")"
+in APPPATH\Controllers\apiController.php on line 75.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:27:49 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\apiController.php on line 99.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:28:54 --> Undefined variable $numrow
+in APPPATH\Controllers\apiController.php on line 68.
+ 1 APPPATH\Controllers\apiController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $numrow', 'APPPATH\\Controllers\\apiController.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:31:12 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:31:34 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:31:42 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:31:44 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:48:51 --> syntax error, unexpected identifier "print_r"
+in APPPATH\Controllers\apiController.php on line 70.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 16:55:59 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\apiController.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 17:00:40 --> syntax error, unexpected variable "$this", expecting ";"
+in APPPATH\Controllers\apiController.php on line 70.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:07:01 --> Undefined variable $query
+in APPPATH\Controllers\apiController.php on line 70.
+ 1 APPPATH\Controllers\apiController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH\\Controllers\\apiController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-22 23:07:26 --> mysqli_sql_exception: Unknown column 'deviceid' in 'field list' in C:\xampp\htdocs\data-search\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\data-search\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\data-search\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\data-search\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\data-search\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\data-search\app\Controllers\apiController.php(89): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\data-search\system\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+#6 C:\xampp\htdocs\data-search\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+#7 C:\xampp\htdocs\data-search\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\data-search\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-22 23:07:26 --> Unknown column 'deviceid' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `usertbl` (`plan_id`, `username`, `mobile`, `status`, `otp`, `deviceid`) VALUES (0, \'saurabhffs\', \'9911723688869\', 0, \'371637\', \'154566\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usertbl` (`plan_id`, `username`, `mobile`, `status`, `otp`, `deviceid`) VALUES (0, \'saurabhffs\', \'9911723688869\', 0, \'371637\', \'154566\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usertbl` (`plan_id`, `username`, `mobile`, `status`, `otp`, `deviceid`) VALUES (0, \'saurabhffs\', \'9911723688869\', 0, \'371637\', \'154566\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usertbl` (`plan_id`, `username`, `mobile`, `status`, `otp`, `deviceid`) VALUES (:plan_id:, :username:, :mobile:, :status:, :otp:, :deviceid:)', [...], false)
+ 5 APPPATH\Controllers\apiController.php(89): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:10:53 --> Undefined variable $data
+in APPPATH\Controllers\apiController.php on line 75.
+ 1 APPPATH\Controllers\apiController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\apiController.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:11:40 --> Undefined variable $data
+in APPPATH\Controllers\apiController.php on line 75.
+ 1 APPPATH\Controllers\apiController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\apiController.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:12:51 --> Undefined variable $data
+in APPPATH\Controllers\apiController.php on line 75.
+ 1 APPPATH\Controllers\apiController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\apiController.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:13:43 --> Call to undefined method App\Controllers\apiController::responce()
+in APPPATH\Controllers\apiController.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:14:53 --> Undefined variable $data
+in APPPATH\Controllers\apiController.php on line 75.
+ 1 APPPATH\Controllers\apiController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\apiController.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:16:14 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:16:26 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:16:45 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:17:19 --> syntax error, unexpected variable "$this"
+in APPPATH\Controllers\apiController.php on line 76.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:17:21 --> syntax error, unexpected variable "$this"
+in APPPATH\Controllers\apiController.php on line 76.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:17:31 --> Undefined variable $data
+in APPPATH\Controllers\apiController.php on line 75.
+ 1 APPPATH\Controllers\apiController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\apiController.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:19:11 --> Undefined variable $data
+in APPPATH\Controllers\apiController.php on line 75.
+ 1 APPPATH\Controllers\apiController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\apiController.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:22:24 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\apiController.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:23:20 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\apiController.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:23:22 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\apiController.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:23:29 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\apiController.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:23:43 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH\Controllers\apiController.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:23:57 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:26:52 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:26:58 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-22 23:29:50 --> mysqli_sql_exception: Table 'dataserach.mobiletbl' doesn't exist in C:\xampp\htdocs\data-search\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\data-search\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\data-search\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\data-search\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\data-search\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\data-search\app\Controllers\apiController.php(69): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\data-search\system\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+#6 C:\xampp\htdocs\data-search\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+#7 C:\xampp\htdocs\data-search\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\data-search\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-22 23:29:50 --> Table 'dataserach.mobiletbl' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `mobiletbl`
+WHERE `mobile` = \'4566\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `mobiletbl`
+WHERE `mobile` = \'4566\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `mobiletbl`
+WHERE `mobile` = \'4566\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mobiletbl`
+WHERE `mobile` = :mobile:', [...], false)
+ 5 APPPATH\Controllers\apiController.php(69): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:30:06 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:30:49 --> Undefined variable $numrow
+in APPPATH\Controllers\apiController.php on line 79.
+ 1 APPPATH\Controllers\apiController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $numrow', 'APPPATH\\Controllers\\apiController.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:30:56 --> Undefined variable $numrow
+in APPPATH\Controllers\apiController.php on line 79.
+ 1 APPPATH\Controllers\apiController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $numrow', 'APPPATH\\Controllers\\apiController.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:32:09 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:32:31 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:33:25 --> Call to undefined method App\Controllers\apiController::response()
+in APPPATH\Controllers\apiController.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:34:11 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\apiController.php on line 89.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:34:59 --> Undefined variable $resp
+in APPPATH\Controllers\apiController.php on line 118.
+ 1 APPPATH\Controllers\apiController.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp', 'APPPATH\\Controllers\\apiController.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:36:23 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\apiController.php on line 86.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:37:54 --> Undefined constant "App\Controllers\data"
+in APPPATH\Controllers\apiController.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:39:43 --> Undefined constant "App\Controllers\res"
+in APPPATH\Controllers\apiController.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:43:42 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\apiController.php on line 84.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:44:20 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\apiController.php on line 84.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:44:22 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\apiController.php on line 84.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:44:42 --> syntax error, unexpected single-quoted string "Status_code", expecting ")"
+in APPPATH\Controllers\apiController.php on line 85.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:45:24 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\apiController.php on line 86.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:46:34 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\apiController.php on line 79.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:46:35 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\apiController.php on line 79.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:46:54 --> Undefined variable $resp
+in APPPATH\Controllers\apiController.php on line 122.
+ 1 APPPATH\Controllers\apiController.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp', 'APPPATH\\Controllers\\apiController.php', 122)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:47:27 --> syntax error, unexpected variable "$res", expecting ":"
+in APPPATH\Controllers\apiController.php on line 83.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:47:29 --> syntax error, unexpected variable "$res", expecting ":"
+in APPPATH\Controllers\apiController.php on line 83.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:48:02 --> syntax error, unexpected token "=>", expecting ")"
+in APPPATH\Controllers\apiController.php on line 83.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:48:54 --> Undefined variable $resp
+in APPPATH\Controllers\apiController.php on line 112.
+ 1 APPPATH\Controllers\apiController.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp', 'APPPATH\\Controllers\\apiController.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:49:56 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\apiController.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:50:06 --> Undefined variable $resp
+in APPPATH\Controllers\apiController.php on line 112.
+ 1 APPPATH\Controllers\apiController.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp', 'APPPATH\\Controllers\\apiController.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:50:32 --> Undefined variable $resp
+in APPPATH\Controllers\apiController.php on line 112.
+ 1 APPPATH\Controllers\apiController.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp', 'APPPATH\\Controllers\\apiController.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:51:15 --> Attempt to read property "res" on array
+in APPPATH\Controllers\apiController.php on line 78.
+ 1 APPPATH\Controllers\apiController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "res" on array', 'APPPATH\\Controllers\\apiController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:51:22 --> Attempt to read property "id" on array
+in APPPATH\Controllers\apiController.php on line 78.
+ 1 APPPATH\Controllers\apiController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Controllers\\apiController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-22 23:51:37 --> Undefined variable $resp
+in APPPATH\Controllers\apiController.php on line 112.
+ 1 APPPATH\Controllers\apiController.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp', 'APPPATH\\Controllers\\apiController.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
