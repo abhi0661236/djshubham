@@ -35,65 +35,10 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-//website routes 
-$routes->get('/', 'dataController::index');
-$routes->match(['get','post'],'loginck', 'dataController::loginck');
-$routes->get('logout', 'dataController::logout');
-$routes->get('search', 'dataController::search');
+
+//api route
 
 
-
-
-
-// API Routes
-$routes->post('userverify', 'apiController::mobileVerify');
-
-
-
-$routes->post('userRegister', 'apiController::userRegister');
-$routes->post('userVerify', 'apiController::userVerify');
-$routes->post('userPlan', 'apiController::userPlan');
-
-$routes->post('userPlanVerify', 'apiController::userPlanVerify');
-$routes->post('user-delete', 'apiController::userDelete');
-
-
-//admin dashboard
-$routes->get('/dashboard', 'adminController::login');
-
-    $routes->group('dashboard',function($routes){
-        $routes->match(['get','post'],'logincheck', 'user/adminController::logincheck');
-        $routes->get('/', 'adminController::index');
-        $routes->match(['get','post'],'user-list', 'adminController::userList');
-        $routes->match(['get','post'],'user-delete/(:any)', 'adminController::userDelete/$1');
-        $routes->match(['get','post'],'user-delete-active/(:any)', 'adminController::activeuserDelete/$1');
-        
-        $routes->match(['get','post'],'plan-entry', 'adminController::planEntry');
-        $routes->match(['get','post'],'plan-add', 'adminController::planAdd');
-        $routes->match(['get','post'],'plan-edit/(:any)', 'adminController::planEdit/$1');
-        $routes->match(['get','post'],'plan-list', 'adminController::planList');
-        $routes->match(['get','post'],'active-list', 'adminController::activelist');
-
-        $routes->match(['get','post'],'plan-delete/(:any)', 'adminController::planDelete/$1');
-
-        $routes->match(['get','post'],'mobile-activate/', 'adminController::mobileActvateDeactivat');
-        
-
-        $routes->get('logout', 'adminController::logout');
-
-        
-        ///user route
-        $routes->get('add-user', 'adminController::adduser');
-
-        $routes->match(['get','post'],'add-user-entry', 'adminController::adduserdata');
-        $routes->match(['get','post'],'login-user-list', 'adminController::loginuserlist');
-        $routes->match(['get','post'],'user-delete/(:num)', 'adminController::userDelete/$1');
-        $routes->match(['get','post'],'user-edit/(:num)/', 'adminController::userEdit/$1');
-        $routes->match(['get','post'],'user-modify/(:num)/', 'adminController::userModify/$1');
-        $routes->match(['get','post'],'user-activate/(:any)', 'adminController::userActvateDeactivat/$1/$2');
-        $routes->match(['get','post'],'user-deactivate/(:any)/', 'adminController::userActvateDeactivat/$1/$2');
-
-    });
 
 /*
  * --------------------------------------------------------------------
