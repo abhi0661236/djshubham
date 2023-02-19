@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import { Box, Typography } from '@mui/material'
+import Image from 'next/image';
 
 
 
@@ -25,19 +26,25 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box
-        className="welcome-section"
-        sx={{ display: "grid", placeContent: "center", position: "relative" }}
-      >
-        <Box
-          sx={welcomeCard}
-        >
-          <Typography variant='h1' sx={{ fontWeight: "600" }}>I Am <span className='welcome-name'>DJ SHUBHAM</span></Typography>
-          <Typography variant='h5'>We deliver high quality songs on demand. Visit our youtube channel for more.</Typography>
-        </Box>
 
-      </Box>
       <main>
+        <Box sx={{ height: "auto", height: "15rem", backgroundColor: "black" }}>
+          <Box className='banner-image'>
+            <Image
+              src="/img/banner2.png"
+              width={400}
+              height={200}
+              alt="website banner"
+              style={{ width: "100%", height: "100%" }}
+            />
+          </Box>
+
+          <Box>
+            <marquee className="moving-text">
+              किसी भी गाने में अपना नाम लगवायें मात्र 100 रुपये में | 
+            </marquee>
+          </Box>
+        </Box>
 
       </main>
     </>

@@ -91,14 +91,26 @@ ul {
 }
 
 .welcome-section {
-  height: 90vh;
+  height: 50vh;
   background-image: url(/img/welcome2.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   text-align: center;
 }
 
 .welcome-name{
   font-size: clamp(2rem, 2rem + 2vw, 4rem);
 }
+
+.banner-image{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.moving-text{
+  padding: 1rem 0;
+  background: yellow;
+}
+

@@ -38,7 +38,7 @@ const Sidebar = ({anchor, onHide}) => {
             <Divider />
             <List>
                 {MENU_ITEMS.map((item, index) => (
-                    <ListItem key={JSON.stringify(item)} disablePadding>
+                    <ListItem key={JSON.stringify(item)} disablePadding onClick={onHide}>
                         <ListItemButton component={Link} href={item.base_url}>
                             <ListItemIcon sx={{mr: 0}}>
                                 {

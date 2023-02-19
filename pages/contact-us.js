@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Construction from '@/components/Construction.js';
 
 const ContactUs = () => {
   return (
     <div>
-        Contact Details with a form will appear here.
+        <Construction />
     </div>
   )
 }
