@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import { Box, Typography } from '@mui/material'
 import Image from 'next/image';
+import NewUpdates from '@/components/home/NewUpdates';
 
 
 
@@ -27,6 +28,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      
+
       <main>
         <Box sx={{ height: "auto", height: "15rem", backgroundColor: "black" }}>
           <Box className='banner-image'>
@@ -41,9 +44,36 @@ export default function Home() {
 
           <Box>
             <marquee className="moving-text">
-              किसी भी गाने में अपना नाम लगवायें मात्र 100 रुपये में | 
+              किसी भी गाने में अपना नाम लगवाये मात्र 50 रुपये में ! (Dj Shubham Azamgarh) से ||
             </marquee>
           </Box>
+
+          <Box sx={{ width: "100%" }} className="my-5">
+            <Box sx={{ width: "fit-content", padding: "2rem", background: "var(--grad-1)", margin: "auto", display: "flex", alignItems: "center", borderRadius: ".5rem", gap: "1.5rem" }}>
+              <Box sx={{ width: "10rem", height: "auto" }}>
+                <Image
+                  src="/logo.png"
+                  width={400}
+                  height={200}
+                  alt="website banner"
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </Box>
+              <Box>
+                <div style={{color: "white", fontWeight: "500", marginBottom: "1rem"}}>DJ SHUBHAM AZAMGARH</div>
+                <div 
+                className="g-ytsubscribe" 
+                data-channelid="UC5RuAnHprD5iNk6XGViwaZw" 
+                data-layout="default" 
+                data-count="default"
+                >
+                </div>
+              </Box>
+            </Box>
+          </Box>
+
+
+          <NewUpdates />
         </Box>
 
       </main>

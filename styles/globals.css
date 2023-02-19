@@ -6,7 +6,13 @@
   --icon-color-dark: rgb(70, 70, 70);
   --icon-color-light: rgb(235, 235, 235);
   --theme-secondary: #7a00c0c2;
+  --grad-1: linear-gradient(90deg, rgb(255, 59, 59), #7a00c0c2);
 }
+
+.bg-primary{
+  background-color: var(--theme-primary) !important;
+}
+
 
 *::-webkit-scrollbar {
   width: .8rem;
