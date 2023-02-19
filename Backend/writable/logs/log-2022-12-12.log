@@ -1,0 +1,948 @@
+CRITICAL - 2022-12-12 00:00:15 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+in APPPATH/Controllers/adminController.php on line 130.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->addState()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 00:21:21 --> mysqli_sql_exception: Column 'state' cannot be null in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `st...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/adminController.php(148): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\adminController->addState()
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 00:21:21 --> Column 'state' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `state` (`state`) VALUES (NULL)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `state` (`state`) VALUES (NULL)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `state` (`state`) VALUES (NULL)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `state` (`state`) VALUES (:state:)', [...], false)
+ 5 APPPATH/Controllers/adminController.php(148): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->addState()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 00:34:11 --> mysqli_sql_exception: Column 'state' cannot be null in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `st...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/adminController.php(139): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\adminController->addState()
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 00:34:11 --> Column 'state' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `state` (`state`) VALUES (NULL)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `state` (`state`) VALUES (NULL)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `state` (`state`) VALUES (NULL)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `state` (`state`) VALUES (:state:)', [...], false)
+ 5 APPPATH/Controllers/adminController.php(139): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->addState()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 00:47:56 --> Undefined variable $allbanner
+in APPPATH/Views/admin/state-list.php on line 61.
+ 1 APPPATH/Views/admin/state-list.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $allbanner', 'APPPATH/Views/admin/state-list.php', 61)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/state-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/state-list', [], true)
+ 5 APPPATH/Controllers/adminController.php(119): view('admin/state-list')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->stateList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 01:12:55 --> Undefined array key "statemod"
+in APPPATH/Controllers/adminController.php on line 169.
+ 1 APPPATH/Controllers/adminController.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "statemod"', 'APPPATH/Controllers/adminController.php', 169)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->editState('1')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 01:13:15 --> Attempt to read property "id" on array
+in APPPATH/Views/admin/state-edit.php on line 41.
+ 1 APPPATH/Views/admin/state-edit.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH/Views/admin/state-edit.php', 41)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/state-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/state-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(183): view('admin/state-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->editState('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 01:13:43 --> Attempt to read property "id" on array
+in APPPATH/Views/admin/state-edit.php on line 41.
+ 1 APPPATH/Views/admin/state-edit.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH/Views/admin/state-edit.php', 41)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/state-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/state-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(183): view('admin/state-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->editState('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 01:13:49 --> Attempt to read property "id" on array
+in APPPATH/Views/admin/state-edit.php on line 41.
+ 1 APPPATH/Views/admin/state-edit.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH/Views/admin/state-edit.php', 41)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/state-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/state-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(183): view('admin/state-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->editState('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:03:36 --> The route for "state-list" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('state-list')
+ 2 APPPATH/Controllers/adminController.php(212): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modifyState()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:04:02 --> The route for "state-list" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('state-list')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/adminController.php(212): redirect('state-list')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modifyState()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:05:17 --> The route for "state-list" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('state-list')
+ 2 APPPATH/Controllers/adminController.php(212): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modifyState()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:06:03 --> The route for "state_list" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('state_list')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/adminController.php(212): redirect('state_list')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modifyState()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:06:30 --> The route for "state-list" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('state-list')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/adminController.php(212): redirect('state-list')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modifyState()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:12:47 --> The route for "state-list" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('state-list')
+ 2 APPPATH/Controllers/adminController.php(212): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modifyState()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:12:56 --> The route for "state-list" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('state-list')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/adminController.php(212): redirect('state-list')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modifyState()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:13:04 --> The route for "state-list" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('state-list')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/adminController.php(212): redirect('state-list')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modifyState()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:13:42 --> The route for "state-list" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('state-list')
+ 2 SYSTEMPATH/Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/adminController.php(212): redirect('state-list')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modifyState()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:14:04 --> The route for "state-list" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('state-list')
+ 2 APPPATH/Controllers/adminController.php(212): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modifyState()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:43:32 --> Undefined property: stdClass::$state
+in APPPATH/Views/admin/crimetype-list.php on line 66.
+ 1 APPPATH/Views/admin/crimetype-list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$state', 'APPPATH/Views/admin/crimetype-list.php', 66)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimetype-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimetype-list', [], true)
+ 5 APPPATH/Controllers/adminController.php(261): view('admin/crimetype-list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modus_operList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:44:11 --> Undefined property: stdClass::$state
+in APPPATH/Views/admin/crimetype-list.php on line 66.
+ 1 APPPATH/Views/admin/crimetype-list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$state', 'APPPATH/Views/admin/crimetype-list.php', 66)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimetype-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimetype-list', [], true)
+ 5 APPPATH/Controllers/adminController.php(261): view('admin/crimetype-list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modus_operList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:48:08 --> Undefined variable $state
+in APPPATH/Views/admin/crimetype-edit.php on line 41.
+ 1 APPPATH/Views/admin/crimetype-edit.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $state', 'APPPATH/Views/admin/crimetype-edit.php', 41)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimetype-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimetype-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(322): view('admin/crimetype-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modus_operEdit('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:48:29 --> Undefined variable $state
+in APPPATH/Views/admin/crimetype-edit.php on line 45.
+ 1 APPPATH/Views/admin/crimetype-edit.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $state', 'APPPATH/Views/admin/crimetype-edit.php', 45)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimetype-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimetype-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(322): view('admin/crimetype-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modus_operEdit('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:48:32 --> Undefined variable $state
+in APPPATH/Views/admin/crimetype-edit.php on line 45.
+ 1 APPPATH/Views/admin/crimetype-edit.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $state', 'APPPATH/Views/admin/crimetype-edit.php', 45)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimetype-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimetype-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(322): view('admin/crimetype-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modus_operEdit('1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 02:49:56 --> Undefined array key "crimetypemod"
+in APPPATH/Controllers/adminController.php on line 344.
+ 1 APPPATH/Controllers/adminController.php(344): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "crimetypemod"', 'APPPATH/Controllers/adminController.php', 344)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modus_operModify()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:04:52 --> Undefined property: stdClass::$type
+in APPPATH/Views/admin/crimename-list.php on line 66.
+ 1 APPPATH/Views/admin/crimename-list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$type', 'APPPATH/Views/admin/crimename-list.php', 66)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-list', [], true)
+ 5 APPPATH/Controllers/adminController.php(404): view('admin/crimename-list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:06:21 --> Undefined variable $crimetype
+in APPPATH/Views/admin/crimename-list.php on line 60.
+ 1 APPPATH/Views/admin/crimename-list.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $crimetype', 'APPPATH/Views/admin/crimename-list.php', 60)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-list', [], true)
+ 5 APPPATH/Controllers/adminController.php(404): view('admin/crimename-list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:06:28 --> Undefined property: stdClass::$type
+in APPPATH/Views/admin/crimename-list.php on line 66.
+ 1 APPPATH/Views/admin/crimename-list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$type', 'APPPATH/Views/admin/crimename-list.php', 66)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-list', [], true)
+ 5 APPPATH/Controllers/adminController.php(404): view('admin/crimename-list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:32:14 --> Attempt to read property "id" on array
+in APPPATH/Views/admin/crimename-list.php on line 15.
+ 1 APPPATH/Views/admin/crimename-list.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH/Views/admin/crimename-list.php', 15)
+ 2 APPPATH/Views/admin/crimename-list.php(23): findObjectById('10', [...])
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-list.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-list', [], true)
+ 6 APPPATH/Controllers/adminController.php(410): view('admin/crimename-list', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeList()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 03:32:18 --> mysqli_sql_exception: Column 'type' cannot be null in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `mo...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mo...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mo...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mo...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/adminController.php(284): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\adminController->modus_operAdd()
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 03:32:18 --> Column 'type' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `modus_operandi` (`type`, `status`) VALUES (NULL, 1)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `modus_operandi` (`type`, `status`) VALUES (NULL, 1)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `modus_operandi` (`type`, `status`) VALUES (NULL, 1)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `modus_operandi` (`type`, `status`) VALUES (:type:, :status:)', [...], false)
+ 5 APPPATH/Controllers/adminController.php(284): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->modus_operAdd()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:32:35 --> Attempt to read property "id" on array
+in APPPATH/Views/admin/crimename-list.php on line 15.
+ 1 APPPATH/Views/admin/crimename-list.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH/Views/admin/crimename-list.php', 15)
+ 2 APPPATH/Views/admin/crimename-list.php(23): findObjectById('10', [...])
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-list.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-list', [], true)
+ 6 APPPATH/Controllers/adminController.php(410): view('admin/crimename-list', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeList()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:33:31 --> Attempt to read property "category" on array
+in APPPATH/Views/admin/crimename-list.php on line 15.
+ 1 APPPATH/Views/admin/crimename-list.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'APPPATH/Views/admin/crimename-list.php', 15)
+ 2 APPPATH/Views/admin/crimename-list.php(23): findObjectById('10', [...])
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-list.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-list', [], true)
+ 6 APPPATH/Controllers/adminController.php(410): view('admin/crimename-list', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeList()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:33:34 --> Attempt to read property "category" on array
+in APPPATH/Views/admin/crimename-list.php on line 15.
+ 1 APPPATH/Views/admin/crimename-list.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'APPPATH/Views/admin/crimename-list.php', 15)
+ 2 APPPATH/Views/admin/crimename-list.php(23): findObjectById('10', [...])
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-list.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-list', [], true)
+ 6 APPPATH/Controllers/adminController.php(410): view('admin/crimename-list', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeList()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:34:47 --> Undefined array key 1
+in APPPATH/Views/admin/crimename-list.php on line 17.
+ 1 APPPATH/Views/admin/crimename-list.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH/Views/admin/crimename-list.php', 17)
+ 2 APPPATH/Views/admin/crimename-list.php(25): findObjectById('10', [...])
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-list.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-list', [], true)
+ 6 APPPATH/Controllers/adminController.php(410): view('admin/crimename-list', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeList()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:35:01 --> Undefined array key 1
+in APPPATH/Views/admin/crimename-list.php on line 17.
+ 1 APPPATH/Views/admin/crimename-list.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH/Views/admin/crimename-list.php', 17)
+ 2 APPPATH/Views/admin/crimename-list.php(25): findObjectById('10', [...])
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-list.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-list', [], true)
+ 6 APPPATH/Controllers/adminController.php(410): view('admin/crimename-list', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeList()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:37:44 --> syntax error, unexpected token "if", expecting "," or ";"
+in APPPATH/Views/admin/crimename-list.php on line 18.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-list', [], true)
+ 3 APPPATH/Controllers/adminController.php(410): view('admin/crimename-list', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeList()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:53:07 --> Undefined variable $crimetype
+in APPPATH/Views/admin/crimename-edit.php on line 41.
+ 1 APPPATH/Views/admin/crimename-edit.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $crimetype', 'APPPATH/Views/admin/crimename-edit.php', 41)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(471): view('admin/crimename-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeEdit('1', '9')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:56:24 --> Attempt to read property "id" on array
+in APPPATH/Views/admin/crimename-edit.php on line 41.
+ 1 APPPATH/Views/admin/crimename-edit.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH/Views/admin/crimename-edit.php', 41)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(475): view('admin/crimename-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeEdit('1', '9')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:57:43 --> Attempt to read property "id" on array
+in APPPATH/Views/admin/crimename-edit.php on line 50.
+ 1 APPPATH/Views/admin/crimename-edit.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH/Views/admin/crimename-edit.php', 50)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(475): view('admin/crimename-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeEdit('1', '9')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:59:17 --> Undefined variable $value
+in APPPATH/Views/admin/crimename-edit.php on line 62.
+ 1 APPPATH/Views/admin/crimename-edit.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'APPPATH/Views/admin/crimename-edit.php', 62)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(475): view('admin/crimename-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeEdit('1', '9')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:59:34 --> Undefined variable $value
+in APPPATH/Views/admin/crimename-edit.php on line 62.
+ 1 APPPATH/Views/admin/crimename-edit.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'APPPATH/Views/admin/crimename-edit.php', 62)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(475): view('admin/crimename-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeEdit('1', '9')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 03:59:53 --> Undefined variable $value2
+in APPPATH/Views/admin/crimename-edit.php on line 66.
+ 1 APPPATH/Views/admin/crimename-edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value2', 'APPPATH/Views/admin/crimename-edit.php', 66)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(475): view('admin/crimename-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeEdit('1', '9')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:01:05 --> Cannot use object of type stdClass as array
+in APPPATH/Views/admin/crimename-edit.php on line 12.
+ 1 APPPATH/Views/admin/crimename-edit.php(62): findObjectById('9', [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(475): view('admin/crimename-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeEdit('1', '9')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:01:26 --> Call to undefined function findObjectById()
+in APPPATH/Views/admin/crimename-edit.php on line 48.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-edit', [], true)
+ 4 APPPATH/Controllers/adminController.php(475): view('admin/crimename-edit', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeEdit('1', '9')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:04:25 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/adminController.php on line 484.
+ 1 APPPATH/Controllers/adminController.php(492): App\Controllers\findObjectById('9', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeEdit('1', '9')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:04:50 --> Call to undefined function findObjectById()
+in APPPATH/Views/admin/crimename-edit.php on line 48.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-edit', [], true)
+ 4 APPPATH/Controllers/adminController.php(494): view('admin/crimename-edit', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeEdit('1', '9')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:05:11 --> Undefined variable $value2
+in APPPATH/Views/admin/crimename-edit.php on line 52.
+ 1 APPPATH/Views/admin/crimename-edit.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value2', 'APPPATH/Views/admin/crimename-edit.php', 52)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-edit', [], true)
+ 5 APPPATH/Controllers/adminController.php(494): view('admin/crimename-edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeEdit('1', '9')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:13:19 --> Cannot use object of type stdClass as array
+in APPPATH/Views/admin/crimename-list.php on line 14.
+ 1 APPPATH/Views/admin/crimename-list.php(59): findObjectById('9', [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-list', [], true)
+ 5 APPPATH/Controllers/adminController.php(411): view('admin/crimename-list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:13:22 --> Cannot use object of type stdClass as array
+in APPPATH/Views/admin/crimename-list.php on line 14.
+ 1 APPPATH/Views/admin/crimename-list.php(59): findObjectById('9', [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-list', [], true)
+ 5 APPPATH/Controllers/adminController.php(411): view('admin/crimename-list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:14:19 --> Cannot use object of type stdClass as array
+in APPPATH/Views/admin/crimename-list.php on line 14.
+ 1 APPPATH/Views/admin/crimename-list.php(59): findObjectById('9', [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-list', [], true)
+ 5 APPPATH/Controllers/adminController.php(411): view('admin/crimename-list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 04:19:47 --> mysqli_sql_exception: Unknown column 'type' in 'where clause' in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/adminController.php(424): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 04:19:47 --> Unknown column 'type' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `crimetbl`
+WHERE `type` = \'दिवार में सेंध लगाकर नकबजनी\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `crimetbl`
+WHERE `type` = \'दिवार में सेंध लगाकर नकबजनी\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `crimetbl`
+WHERE `type` = \'दिवार में सेंध लगाकर नकबजनी\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `crimetbl`
+WHERE `type` = :type:', [...], false)
+ 5 APPPATH/Controllers/adminController.php(424): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 04:22:49 --> mysqli_sql_exception: Unknown column 'status' in 'field list' in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `cr...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cr...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cr...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cr...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/adminController.php(436): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 04:22:49 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `crimetbl` (`crime`, `category`, `status`) VALUES (NULL, \'3\', 1)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `crimetbl` (`crime`, `category`, `status`) VALUES (NULL, \'3\', 1)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `crimetbl` (`crime`, `category`, `status`) VALUES (NULL, \'3\', 1)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `crimetbl` (`crime`, `category`, `status`) VALUES (:crime:, :category:, :status:)', [...], false)
+ 5 APPPATH/Controllers/adminController.php(436): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 04:23:04 --> mysqli_sql_exception: Column 'crime' cannot be null in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `cr...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cr...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cr...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cr...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/adminController.php(436): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 04:23:04 --> Column 'crime' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (NULL, \'3\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (NULL, \'3\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (NULL, \'3\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (:crime:, :category:)', [...], false)
+ 5 APPPATH/Controllers/adminController.php(436): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 04:23:24 --> mysqli_sql_exception: Column 'crime' cannot be null in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `cr...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cr...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cr...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cr...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/adminController.php(436): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 04:23:24 --> Column 'crime' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (NULL, \'3\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (NULL, \'3\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (NULL, \'3\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (:crime:, :category:)', [...], false)
+ 5 APPPATH/Controllers/adminController.php(436): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 04:23:32 --> mysqli_sql_exception: Column 'crime' cannot be null in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `cr...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cr...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cr...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cr...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/adminController.php(436): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 04:23:32 --> Column 'crime' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (:crime:, :category:)', [...], false)
+ 5 APPPATH/Controllers/adminController.php(436): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:23:53 --> Undefined variable $crimetype
+in APPPATH/Views/admin/crimename-entry.php on line 47.
+ 1 APPPATH/Views/admin/crimename-entry.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $crimetype', 'APPPATH/Views/admin/crimename-entry.php', 47)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-entry.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-entry', [], true)
+ 5 APPPATH/Controllers/adminController.php(443): view('admin/crimename-entry', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 04:24:35 --> mysqli_sql_exception: Column 'crime' cannot be null in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `cr...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cr...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cr...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cr...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/adminController.php(436): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 04:24:35 --> Column 'crime' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (:crime:, :category:)', [...], false)
+ 5 APPPATH/Controllers/adminController.php(436): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 04:25:11 --> Attempt to read property "id" on array
+in APPPATH/Views/admin/crimename-entry.php on line 49.
+ 1 APPPATH/Views/admin/crimename-entry.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH/Views/admin/crimename-entry.php', 49)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/crimename-entry.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/crimename-entry', [], true)
+ 5 APPPATH/Controllers/adminController.php(447): view('admin/crimename-entry', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 04:26:29 --> mysqli_sql_exception: Column 'crime' cannot be null in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `cr...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cr...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cr...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cr...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/adminController.php(436): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 04:26:29 --> Column 'crime' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `crimetbl` (`crime`, `category`) VALUES (:crime:, :category:)', [...], false)
+ 5 APPPATH/Controllers/adminController.php(436): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->crimeAdd()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 05:03:25 --> Undefined variable $mobileuer
+in APPPATH/Views/admin/mobile-list.php on line 33.
+ 1 APPPATH/Views/admin/mobile-list.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mobileuer', 'APPPATH/Views/admin/mobile-list.php', 33)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/mobile-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/mobile-list', [], true)
+ 5 APPPATH/Controllers/mobileController.php(24): view('admin/mobile-list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\mobileController->mobileList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 05:06:57 --> Undefined property: stdClass::$createdAt
+in APPPATH/Views/admin/mobile-list.php on line 45.
+ 1 APPPATH/Views/admin/mobile-list.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$createdAt', 'APPPATH/Views/admin/mobile-list.php', 45)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/mobile-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/mobile-list', [], true)
+ 5 APPPATH/Controllers/mobileController.php(24): view('admin/mobile-list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\mobileController->mobileList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 05:21:15 --> mysqli_sql_exception: Unknown column 'deactivate' in 'where clause' in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `mobilet...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobilet...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobilet...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `mobilet...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/mobileController.php(50): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\mobileController->mobileActvateDeactivat('deactivate', '1')
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 05:21:15 --> Unknown column 'deactivate' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `mobiletbl` SET `status` = \'Active\'
+WHERE `deactivate` = \'deactivate\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobiletbl` SET `status` = \'Active\'
+WHERE `deactivate` = \'deactivate\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobiletbl` SET `status` = \'Active\'
+WHERE `deactivate` = \'deactivate\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `mobiletbl` SET `status` = :status:
+WHERE `deactivate` = :deactivate:', [...], false)
+ 5 APPPATH/Controllers/mobileController.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\mobileController->mobileActvateDeactivat('deactivate', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 05:21:20 --> mysqli_sql_exception: Unknown column 'deactivate' in 'where clause' in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `mobilet...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobilet...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobilet...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `mobilet...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/mobileController.php(50): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\mobileController->mobileActvateDeactivat('deactivate', '1')
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 05:21:20 --> Unknown column 'deactivate' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `mobiletbl` SET `status` = \'Active\'
+WHERE `deactivate` = \'deactivate\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobiletbl` SET `status` = \'Active\'
+WHERE `deactivate` = \'deactivate\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobiletbl` SET `status` = \'Active\'
+WHERE `deactivate` = \'deactivate\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `mobiletbl` SET `status` = :status:
+WHERE `deactivate` = :deactivate:', [...], false)
+ 5 APPPATH/Controllers/mobileController.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\mobileController->mobileActvateDeactivat('deactivate', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 05:22:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':status:
+WHERE 1 = :1:' at line 1 in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `mobilet...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobilet...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobilet...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `mobilet...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/mobileController.php(50): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\mobileController->mobileActvateDeactivat('deactivate', '1')
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 05:22:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':status:
+WHERE 1 = :1:' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:', [...], false)
+ 5 APPPATH/Controllers/mobileController.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\mobileController->mobileActvateDeactivat('deactivate', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 05:22:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':status:
+WHERE 1 = :1:' at line 1 in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `mobilet...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobilet...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobilet...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `mobilet...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/mobileController.php(50): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\mobileController->mobileActvateDeactivat('deactivate', '1')
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 05:22:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':status:
+WHERE 1 = :1:' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:', [...], false)
+ 5 APPPATH/Controllers/mobileController.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\mobileController->mobileActvateDeactivat('deactivate', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 05:25:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':status:
+WHERE 1 = :1:' at line 1 in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `mobilet...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobilet...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobilet...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `mobilet...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/mobileController.php(50): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\mobileController->mobileActvateDeactivat('deactivate', '1')
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 05:25:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':status:
+WHERE 1 = :1:' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:', [...], false)
+ 5 APPPATH/Controllers/mobileController.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\mobileController->mobileActvateDeactivat('deactivate', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 05:25:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':status:
+WHERE 1 = :1:' at line 1 in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `mobilet...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobilet...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobilet...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `mobilet...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/mobileController.php(50): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\mobileController->mobileActvateDeactivat('deactivate', '1')
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 05:25:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':status:
+WHERE 1 = :1:' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:', [...], false)
+ 5 APPPATH/Controllers/mobileController.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\mobileController->mobileActvateDeactivat('deactivate', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 05:25:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':status:
+WHERE 1 = :1:' at line 1 in /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/ccd-ci4/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `mobilet...', 0)
+#1 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobilet...')
+#2 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobilet...')
+#3 /opt/lampp/htdocs/ccd-ci4/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `mobilet...', Array, false)
+#4 /opt/lampp/htdocs/ccd-ci4/app/Controllers/mobileController.php(50): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(927): App\Controllers\mobileController->mobileActvateDeactivat('deactivate', '1')
+#6 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+#7 /opt/lampp/htdocs/ccd-ci4/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/ccd-ci4/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-12 05:25:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':status:
+WHERE 1 = :1:' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `mobiletbl` SET `status` = :status:
+WHERE 1 = :1:', [...], false)
+ 5 APPPATH/Controllers/mobileController.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\mobileController->mobileActvateDeactivat('deactivate', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mobileController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

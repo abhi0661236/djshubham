@@ -1,0 +1,7 @@
+CRITICAL - 2023-01-11 12:55:28 --> Attempt to read property "username" on null
+in APPPATH\Controllers\dataController.php on line 95.
+ 1 APPPATH\Controllers\dataController.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "username" on null', 'APPPATH\\Controllers\\dataController.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\dataController->loginck()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dataController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

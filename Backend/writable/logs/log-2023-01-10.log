@@ -1,0 +1,283 @@
+CRITICAL - 2023-01-10 11:36:10 --> syntax error, unexpected token "=>", expecting ")"
+in APPPATH\Controllers\adminController.php on line 229.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\adminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\adminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\adminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\adminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 11:36:48 --> syntax error, unexpected token "=>", expecting ")"
+in APPPATH\Controllers\adminController.php on line 229.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\adminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\adminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\adminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\adminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 12:04:18 --> Undefined constant "App\Controllers\where"
+in APPPATH\Controllers\adminController.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userDelete('60')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 13:14:40 --> Undefined array key 0
+in APPPATH\Controllers\adminController.php on line 213.
+ 1 APPPATH\Controllers\adminController.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\adminController.php', 213)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 13:15:05 --> Undefined constant "App\Controllers\userDetail"
+in APPPATH\Controllers\adminController.php on line 213.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 13:15:29 --> Undefined variable $userDetail
+in APPPATH\Controllers\adminController.php on line 213.
+ 1 APPPATH\Controllers\adminController.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userDetail', 'APPPATH\\Controllers\\adminController.php', 213)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 13:18:13 --> Undefined variable $where
+in APPPATH\Controllers\adminController.php on line 219.
+ 1 APPPATH\Controllers\adminController.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $where', 'APPPATH\\Controllers\\adminController.php', 219)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 13:24:33 --> syntax error, unexpected variable "$builder"
+in APPPATH\Controllers\adminController.php on line 219.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\adminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\adminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\adminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\adminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 13:25:39 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\adminController.php on line 227.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\adminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\adminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\adminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\adminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 13:45:22 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Controllers\adminController.php on line 219.
+ 1 APPPATH\Controllers\adminController.php(219): count(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 13:46:11 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Controllers\adminController.php on line 218.
+ 1 APPPATH\Controllers\adminController.php(218): count(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 13:47:19 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Controllers\adminController.php on line 229.
+ 1 APPPATH\Controllers\adminController.php(229): count(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 13:48:46 --> Undefined constant "App\Controllers\result"
+in APPPATH\Controllers\adminController.php on line 230.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 13:50:36 --> Array to string conversion
+in APPPATH\Controllers\adminController.php on line 231.
+ 1 APPPATH\Controllers\adminController.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\adminController.php', 231)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 14:02:39 --> Undefined variable $userDetail
+in APPPATH\Views\admin\user-list.php on line 37.
+ 1 APPPATH\Views\admin\user-list.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userDetail', 'APPPATH\\Views\\admin\\user-list.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\user-list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/user-list', [], true)
+ 5 APPPATH\Controllers\adminController.php(238): view('admin/user-list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 14:03:06 --> Undefined variable $result
+in APPPATH\Views\admin\user-list.php on line 37.
+ 1 APPPATH\Views\admin\user-list.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'APPPATH\\Views\\admin\\user-list.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\user-list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/user-list', [], true)
+ 5 APPPATH\Controllers\adminController.php(238): view('admin/user-list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 14:11:23 --> Undefined variable $userDetail
+in APPPATH\Views\admin\user-list.php on line 37.
+ 1 APPPATH\Views\admin\user-list.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userDetail', 'APPPATH\\Views\\admin\\user-list.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\user-list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/user-list', [], true)
+ 5 APPPATH\Controllers\adminController.php(238): view('admin/user-list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 14:11:31 --> Undefined variable $userDetail
+in APPPATH\Views\admin\user-list.php on line 37.
+ 1 APPPATH\Views\admin\user-list.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userDetail', 'APPPATH\\Views\\admin\\user-list.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\user-list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/user-list', [], true)
+ 5 APPPATH\Controllers\adminController.php(238): view('admin/user-list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 14:12:01 --> Undefined variable $userDetail
+in APPPATH\Views\admin\user-list.php on line 37.
+ 1 APPPATH\Views\admin\user-list.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userDetail', 'APPPATH\\Views\\admin\\user-list.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\user-list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/user-list', [], true)
+ 5 APPPATH\Controllers\adminController.php(238): view('admin/user-list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 14:12:12 --> Undefined variable $data
+in APPPATH\Views\admin\user-list.php on line 37.
+ 1 APPPATH\Views\admin\user-list.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\admin\\user-list.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\user-list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/user-list', [], true)
+ 5 APPPATH\Controllers\adminController.php(238): view('admin/user-list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 14:13:16 --> Undefined variable $userDetail
+in APPPATH\Controllers\adminController.php on line 238.
+ 1 APPPATH\Controllers\adminController.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userDetail', 'APPPATH\\Controllers\\adminController.php', 238)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 14:13:34 --> Undefined property: stdClass::$username
+in APPPATH\Views\admin\user-list.php on line 42.
+ 1 APPPATH\Views\admin\user-list.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$username', 'APPPATH\\Views\\admin\\user-list.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\user-list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/user-list', [], true)
+ 5 APPPATH\Controllers\adminController.php(238): view('admin/user-list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 14:27:46 --> Attempt to read property "id" on bool
+in APPPATH\Controllers\adminController.php on line 223.
+ 1 APPPATH\Controllers\adminController.php(223): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on bool', 'APPPATH\\Controllers\\adminController.php', 223)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 14:31:03 --> Undefined variable $value
+in APPPATH\Controllers\adminController.php on line 217.
+ 1 APPPATH\Controllers\adminController.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'APPPATH\\Controllers\\adminController.php', 217)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 14:35:55 --> Undefined variable $result
+in APPPATH\Views\admin\user-list.php on line 37.
+ 1 APPPATH\Views\admin\user-list.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'APPPATH\\Views\\admin\\user-list.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\user-list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/user-list', [], true)
+ 5 APPPATH\Controllers\adminController.php(234): view('admin/user-list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 14:51:52 --> syntax error, unexpected token "=>", expecting ")"
+in APPPATH\Controllers\adminController.php on line 219.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\adminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\adminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\adminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\adminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 14:52:59 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\adminController.php on line 230.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\adminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\adminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\adminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\adminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 14:53:17 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\adminController.php on line 230.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\adminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\adminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\adminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\adminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 14:55:07 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Controllers\adminController.php on line 228.
+ 1 APPPATH\Controllers\adminController.php(228): count(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 15:03:04 --> Undefined array key "userplanDetail"
+in APPPATH\Controllers\adminController.php on line 228.
+ 1 APPPATH\Controllers\adminController.php(228): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "userplanDetail"', 'APPPATH\\Controllers\\adminController.php', 228)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 15:06:06 --> Undefined variable $showAll
+in APPPATH\Controllers\adminController.php on line 236.
+ 1 APPPATH\Controllers\adminController.php(236): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $showAll', 'APPPATH\\Controllers\\adminController.php', 236)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 15:22:50 --> Undefined array key 0
+in APPPATH\Controllers\adminController.php on line 234.
+ 1 APPPATH\Controllers\adminController.php(234): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\adminController.php', 234)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 15:23:37 --> Array to string conversion
+in APPPATH\Controllers\adminController.php on line 234.
+ 1 APPPATH\Controllers\adminController.php(234): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\adminController.php', 234)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\adminController->userList()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-10 15:23:46 --> syntax error, unexpected token "array", expecting ")"
+in APPPATH\Controllers\adminController.php on line 234.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\adminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\adminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\adminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\adminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

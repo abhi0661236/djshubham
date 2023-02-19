@@ -1,0 +1,198 @@
+CRITICAL - 2022-12-11 00:43:40 --> Attempt to read property "username" on null
+in APPPATH/Controllers/ccdController.php on line 40.
+ 1 APPPATH/Controllers/ccdController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "username" on null', 'APPPATH/Controllers/ccdController.php', 40)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 01:11:45 --> Attempt to read property "username" on null
+in APPPATH/Controllers/ccdController.php on line 40.
+ 1 APPPATH/Controllers/ccdController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "username" on null', 'APPPATH/Controllers/ccdController.php', 40)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 01:12:07 --> Attempt to read property "username" on null
+in APPPATH/Controllers/ccdController.php on line 40.
+ 1 APPPATH/Controllers/ccdController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "username" on null', 'APPPATH/Controllers/ccdController.php', 40)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 01:12:12 --> Attempt to read property "username" on null
+in APPPATH/Controllers/ccdController.php on line 40.
+ 1 APPPATH/Controllers/ccdController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "username" on null', 'APPPATH/Controllers/ccdController.php', 40)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 01:13:19 --> Attempt to read property "username" on null
+in APPPATH/Controllers/ccdController.php on line 40.
+ 1 APPPATH/Controllers/ccdController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "username" on null', 'APPPATH/Controllers/ccdController.php', 40)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 01:13:33 --> Attempt to read property "username" on null
+in APPPATH/Controllers/ccdController.php on line 40.
+ 1 APPPATH/Controllers/ccdController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "username" on null', 'APPPATH/Controllers/ccdController.php', 40)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 01:14:02 --> Attempt to read property "username" on null
+in APPPATH/Controllers/ccdController.php on line 40.
+ 1 APPPATH/Controllers/ccdController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "username" on null', 'APPPATH/Controllers/ccdController.php', 40)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 01:17:05 --> Invalid file: template/base.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/base.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('template/base', [], true)
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('ccd/main_pg', [], true)
+ 4 APPPATH/Controllers/ccdController.php(37): view('ccd/main_pg')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 01:17:16 --> Invalid file: template/base.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/base.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('template/base', [], true)
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('ccd/main_pg', [], true)
+ 4 APPPATH/Controllers/ccdController.php(37): view('ccd/main_pg')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 01:19:42 --> Invalid file: template/base.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/base.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('template/base', [], true)
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('ccd/main_pg', [], true)
+ 4 APPPATH/Controllers/ccdController.php(37): view('ccd/main_pg')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 01:30:16 --> Undefined variable $today
+in APPPATH/Views/ccd/template/base.php on line 68.
+ 1 APPPATH/Views/ccd/template/base.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $today', 'APPPATH/Views/ccd/template/base.php', 68)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/ccd/template/base.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('ccd/template/base', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('ccd/main_pg', [], true)
+ 6 APPPATH/Controllers/ccdController.php(37): view('ccd/main_pg')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 01:30:33 --> Undefined variable $today
+in APPPATH/Views/ccd/template/base.php on line 68.
+ 1 APPPATH/Views/ccd/template/base.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $today', 'APPPATH/Views/ccd/template/base.php', 68)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/ccd/template/base.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('ccd/template/base', [], true)
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('ccd/main_pg', [], true)
+ 6 APPPATH/Controllers/ccdController.php(37): view('ccd/main_pg')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 01:44:49 --> md5(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH/Controllers/ccdController.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'md5(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH/Controllers/ccdController.php', 19)
+ 2 APPPATH/Controllers/ccdController.php(19): md5(null)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 02:00:11 --> md5(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH/Controllers/ccdController.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'md5(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH/Controllers/ccdController.php', 31)
+ 2 APPPATH/Controllers/ccdController.php(31): md5(null)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 02:01:05 --> md5(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH/Controllers/ccdController.php on line 28.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'md5(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH/Controllers/ccdController.php', 28)
+ 2 APPPATH/Controllers/ccdController.php(28): md5(null)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 02:05:24 --> md5(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH/Controllers/ccdController.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'md5(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH/Controllers/ccdController.php', 33)
+ 2 APPPATH/Controllers/ccdController.php(33): md5(null)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 02:10:10 --> Undefined variable $today
+in APPPATH/Views/ccd/main_pg.php on line 6.
+ 1 APPPATH/Views/ccd/main_pg.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $today', 'APPPATH/Views/ccd/main_pg.php', 6)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/ccd/main_pg.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('ccd/main_pg', [], true)
+ 5 APPPATH/Controllers/ccdController.php(25): view('ccd/main_pg', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 03:18:43 --> md5(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH/Controllers/ccdController.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'md5(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH/Controllers/ccdController.php', 33)
+ 2 APPPATH/Controllers/ccdController.php(33): md5(null)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 04:50:24 --> syntax error, unexpected identifier "mycustom"
+in APPPATH/Views/ccd/search.php on line 49.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('ccd/search', [], true)
+ 3 APPPATH/Controllers/ccdController.php(93): view('ccd/search')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->search()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:39:01 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\user/adminController::logincheck
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\user/adminController::logincheck')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard/logincheck')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('dashboard/logincheck')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 17:48:06 --> md5(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH/Controllers/ccdController.php on line 45.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'md5(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH/Controllers/ccdController.php', 45)
+ 2 APPPATH/Controllers/ccdController.php(45): md5(null)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 17:48:11 --> md5(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH/Controllers/ccdController.php on line 45.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'md5(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH/Controllers/ccdController.php', 45)
+ 2 APPPATH/Controllers/ccdController.php(45): md5(null)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 18:02:27 --> Undefined variable $allbanner
+in APPPATH/Views/admin/state-list.php on line 61.
+ 1 APPPATH/Views/admin/state-list.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $allbanner', 'APPPATH/Views/admin/state-list.php', 61)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/state-list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/state-list', [], true)
+ 5 APPPATH/Controllers/adminController.php(119): view('admin/state-list')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\adminController->stateList()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adminController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

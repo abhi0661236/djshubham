@@ -1,0 +1,377 @@
+CRITICAL - 2022-12-26 11:44:34 --> Undefined variable $resp
+in APPPATH\Controllers\apiController.php on line 132.
+ 1 APPPATH\Controllers\apiController.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp', 'APPPATH\\Controllers\\apiController.php', 132)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userRegister()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 11:47:50 --> Undefined array key "otp"
+in APPPATH\Controllers\apiController.php on line 141.
+ 1 APPPATH\Controllers\apiController.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "otp"', 'APPPATH\\Controllers\\apiController.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userVerify()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 11:48:00 --> Undefined array key "otp"
+in APPPATH\Controllers\apiController.php on line 141.
+ 1 APPPATH\Controllers\apiController.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "otp"', 'APPPATH\\Controllers\\apiController.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userVerify()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 11:48:02 --> Undefined array key "otp"
+in APPPATH\Controllers\apiController.php on line 141.
+ 1 APPPATH\Controllers\apiController.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "otp"', 'APPPATH\\Controllers\\apiController.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userVerify()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 11:48:36 --> Undefined variable $mobile
+in APPPATH\Controllers\apiController.php on line 144.
+ 1 APPPATH\Controllers\apiController.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mobile', 'APPPATH\\Controllers\\apiController.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userVerify()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 11:49:00 --> Undefined variable $mobile
+in APPPATH\Controllers\apiController.php on line 144.
+ 1 APPPATH\Controllers\apiController.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mobile', 'APPPATH\\Controllers\\apiController.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userVerify()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 11:49:02 --> Undefined variable $mobile
+in APPPATH\Controllers\apiController.php on line 144.
+ 1 APPPATH\Controllers\apiController.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mobile', 'APPPATH\\Controllers\\apiController.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userVerify()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 11:53:05 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\apiController.php on line 186.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:13:24 --> Undefined array key "planname"
+in APPPATH\Controllers\apiController.php on line 188.
+ 1 APPPATH\Controllers\apiController.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "planname"', 'APPPATH\\Controllers\\apiController.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:13:33 --> Undefined array key "mobile"
+in APPPATH\Controllers\apiController.php on line 187.
+ 1 APPPATH\Controllers\apiController.php(187): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mobile"', 'APPPATH\\Controllers\\apiController.php', 187)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:13:38 --> Undefined array key "planname"
+in APPPATH\Controllers\apiController.php on line 188.
+ 1 APPPATH\Controllers\apiController.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "planname"', 'APPPATH\\Controllers\\apiController.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:15:20 --> Undefined array key "planname"
+in APPPATH\Controllers\apiController.php on line 188.
+ 1 APPPATH\Controllers\apiController.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "planname"', 'APPPATH\\Controllers\\apiController.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:15:48 --> Undefined array key 0
+in APPPATH\Controllers\apiController.php on line 201.
+ 1 APPPATH\Controllers\apiController.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\apiController.php', 201)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:16:29 --> Undefined array key "planname"
+in APPPATH\Controllers\apiController.php on line 188.
+ 1 APPPATH\Controllers\apiController.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "planname"', 'APPPATH\\Controllers\\apiController.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:16:51 --> Undefined array key 0
+in APPPATH\Controllers\apiController.php on line 201.
+ 1 APPPATH\Controllers\apiController.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\apiController.php', 201)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:17:10 --> Undefined array key 0
+in APPPATH\Controllers\apiController.php on line 203.
+ 1 APPPATH\Controllers\apiController.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\apiController.php', 203)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:17:27 --> Undefined array key 0
+in APPPATH\Controllers\apiController.php on line 203.
+ 1 APPPATH\Controllers\apiController.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\apiController.php', 203)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:17:47 --> Undefined array key 0
+in APPPATH\Controllers\apiController.php on line 201.
+ 1 APPPATH\Controllers\apiController.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\apiController.php', 201)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:21:44 --> Undefined array key "planname"
+in APPPATH\Controllers\apiController.php on line 188.
+ 1 APPPATH\Controllers\apiController.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "planname"', 'APPPATH\\Controllers\\apiController.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:23:13 --> Undefined array key 0
+in APPPATH\Controllers\apiController.php on line 204.
+ 1 APPPATH\Controllers\apiController.php(204): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\apiController.php', 204)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:25:23 --> Undefined array key 0
+in APPPATH\Controllers\apiController.php on line 204.
+ 1 APPPATH\Controllers\apiController.php(204): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\apiController.php', 204)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:27:12 --> Attempt to read property "id" on array
+in APPPATH\Controllers\apiController.php on line 240.
+ 1 APPPATH\Controllers\apiController.php(240): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Controllers\\apiController.php', 240)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:28:11 --> Attempt to read property "id" on array
+in APPPATH\Controllers\apiController.php on line 240.
+ 1 APPPATH\Controllers\apiController.php(240): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Controllers\\apiController.php', 240)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:28:16 --> Attempt to read property "id" on array
+in APPPATH\Controllers\apiController.php on line 240.
+ 1 APPPATH\Controllers\apiController.php(240): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Controllers\\apiController.php', 240)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-26 12:30:41 --> mysqli_sql_exception: Unknown column 'mobile' in 'where clause' in C:\xampp\htdocs\data-search\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\data-search\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\data-search\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\data-search\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\data-search\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\data-search\app\Controllers\apiController.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\data-search\system\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+#6 C:\xampp\htdocs\data-search\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+#7 C:\xampp\htdocs\data-search\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\data-search\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-26 12:30:41 --> Unknown column 'mobile' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `plantbl`
+WHERE `mobile` = \'99117233668s78\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `plantbl`
+WHERE `mobile` = \'99117233668s78\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `plantbl`
+WHERE `mobile` = \'99117233668s78\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `plantbl`
+WHERE `mobile` = :mobile:', [...], false)
+ 5 APPPATH\Controllers\apiController.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:31:02 --> Attempt to read property "id" on array
+in APPPATH\Controllers\apiController.php on line 237.
+ 1 APPPATH\Controllers\apiController.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Controllers\\apiController.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:31:09 --> Undefined array key 0
+in APPPATH\Controllers\apiController.php on line 204.
+ 1 APPPATH\Controllers\apiController.php(204): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\apiController.php', 204)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:32:20 --> Undefined array key 0
+in APPPATH\Controllers\apiController.php on line 204.
+ 1 APPPATH\Controllers\apiController.php(204): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\apiController.php', 204)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:32:21 --> Undefined array key 0
+in APPPATH\Controllers\apiController.php on line 204.
+ 1 APPPATH\Controllers\apiController.php(204): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\apiController.php', 204)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:32:23 --> Undefined array key 0
+in APPPATH\Controllers\apiController.php on line 204.
+ 1 APPPATH\Controllers\apiController.php(204): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\apiController.php', 204)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:32:35 --> Undefined array key 0
+in APPPATH\Controllers\apiController.php on line 204.
+ 1 APPPATH\Controllers\apiController.php(204): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\apiController.php', 204)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:32:56 --> Undefined array key 0
+in APPPATH\Controllers\apiController.php on line 204.
+ 1 APPPATH\Controllers\apiController.php(204): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\apiController.php', 204)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:33:08 --> Undefined array key 0
+in APPPATH\Controllers\apiController.php on line 204.
+ 1 APPPATH\Controllers\apiController.php(204): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\apiController.php', 204)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-26 12:33:23 --> mysqli_sql_exception: Unknown column 'mobile' in 'where clause' in C:\xampp\htdocs\data-search\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\data-search\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\data-search\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\data-search\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\data-search\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\data-search\app\Controllers\apiController.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\data-search\system\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+#6 C:\xampp\htdocs\data-search\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+#7 C:\xampp\htdocs\data-search\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\data-search\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-26 12:33:23 --> Unknown column 'mobile' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `plantbl`
+WHERE `mobile` = \'99117233668s76\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `plantbl`
+WHERE `mobile` = \'99117233668s76\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `plantbl`
+WHERE `mobile` = \'99117233668s76\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `plantbl`
+WHERE `mobile` = :mobile:', [...], false)
+ 5 APPPATH\Controllers\apiController.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-26 12:35:04 --> mysqli_sql_exception: Unknown column 'mobile' in 'where clause' in C:\xampp\htdocs\data-search\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\data-search\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\data-search\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\data-search\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\data-search\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\data-search\app\Controllers\apiController.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\data-search\system\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+#6 C:\xampp\htdocs\data-search\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+#7 C:\xampp\htdocs\data-search\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\data-search\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-26 12:35:04 --> Unknown column 'mobile' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `plantbl`
+WHERE `mobile` = \'99117233668s78\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `plantbl`
+WHERE `mobile` = \'99117233668s78\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `plantbl`
+WHERE `mobile` = \'99117233668s78\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `plantbl`
+WHERE `mobile` = :mobile:', [...], false)
+ 5 APPPATH\Controllers\apiController.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:36:14 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\apiController.php on line 207.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\apiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\apiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\apiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\apiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:36:22 --> print_r() expects at least 1 argument, 0 given
+in APPPATH\Controllers\apiController.php on line 208.
+ 1 APPPATH\Controllers\apiController.php(208): print_r()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:39:41 --> Attempt to read property "id" on array
+in APPPATH\Controllers\apiController.php on line 237.
+ 1 APPPATH\Controllers\apiController.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Controllers\\apiController.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:40:26 --> Attempt to read property "id" on array
+in APPPATH\Controllers\apiController.php on line 237.
+ 1 APPPATH\Controllers\apiController.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Controllers\\apiController.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:40:29 --> Attempt to read property "id" on array
+in APPPATH\Controllers\apiController.php on line 237.
+ 1 APPPATH\Controllers\apiController.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Controllers\\apiController.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:43:57 --> Attempt to read property "id" on array
+in APPPATH\Controllers\apiController.php on line 225.
+ 1 APPPATH\Controllers\apiController.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Controllers\\apiController.php', 225)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:44:42 --> Attempt to read property "id" on array
+in APPPATH\Controllers\apiController.php on line 237.
+ 1 APPPATH\Controllers\apiController.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'APPPATH\\Controllers\\apiController.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 12:48:57 --> Undefined variable $resp
+in APPPATH\Controllers\apiController.php on line 271.
+ 1 APPPATH\Controllers\apiController.php(271): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp', 'APPPATH\\Controllers\\apiController.php', 271)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\apiController->userPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\apiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

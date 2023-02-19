@@ -1,0 +1,18 @@
+CRITICAL - 2023-02-12 20:29:39 --> Invalid file: datasearch/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datasearch/index.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('datasearch/index', [], true)
+ 3 APPPATH\Controllers\dataController.php(10): view('datasearch/index')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\dataController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dataController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-12 20:29:42 --> Invalid file: datasearch/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datasearch/index.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('datasearch/index', [], true)
+ 3 APPPATH\Controllers\dataController.php(10): view('datasearch/index')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\dataController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dataController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,44 @@
+CRITICAL - 2022-12-10 20:36:24 --> syntax error, unexpected token "}", expecting identifier or variable or "{" or "$"
+in APPPATH/Controllers/ccdController.php on line 17.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ccdController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ccdController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ccdController')
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\ccdController', true)
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 20:36:29 --> syntax error, unexpected token "}", expecting identifier or variable or "{" or "$"
+in APPPATH/Controllers/ccdController.php on line 17.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/ccdController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ccdController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ccdController')
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\ccdController', true)
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 20:52:29 --> Class name must be a valid object or a string
+in APPPATH/Controllers/ccdController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 21:59:45 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH/Controllers/ccdController.php on line 24.
+ 1 APPPATH/Controllers/ccdController.php(24): count(null)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 21:59:53 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH/Controllers/ccdController.php on line 24.
+ 1 APPPATH/Controllers/ccdController.php(24): count(null)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 22:03:39 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/ccdController.php on line 31.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\ccdController->loginck()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ccdController))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
