@@ -6,8 +6,8 @@ import Link from 'next/link';
 const SongCard = ({ data }) => {
     return (
         <>
-            <div className="p-4">
-                <Link href="#" className='w-100 text-decoration-none fw-semibold'>
+            <div className="p-4 border-bottom">
+                <Link href="/songs/bhojpuri" className='w-100 text-decoration-none fw-semibold'>
                     <Image
                         src="/player.gif"
                         width={35}
@@ -29,7 +29,6 @@ const SongCard = ({ data }) => {
                     <span className='text-info'> [Download Now]</span>
                 </Link>
             </div>
-            <hr className="m-0 p-0" />
         </>
     )
 }

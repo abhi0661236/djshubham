@@ -6,14 +6,15 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Image from 'next/image';
-import Sidebar from '../components/Sidebar.js';
+import AdminSideNav from '@/components/admin/AdminSideNav.js';
 import Link from 'next/link';
 import { HiMenuAlt1 } from 'react-icons/hi'
 
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
 
-export default function Navbar() {
+
+export default function AdminNav() {
     const [opensidebar, setSidebar] = React.useState(false);
 
     const toggleDrawer = (open) => (event) => {
@@ -49,7 +50,7 @@ export default function Navbar() {
                             onClose={toggleDrawer(false)}
                             onOpen={toggleDrawer(true)}
                         >
-                            <Sidebar onHide={() => setSidebar(false)} anchor="left" />
+                            <AdminSideNav onHide={() => setSidebar(false)} anchor="left" />
                         </SwipeableDrawer>
                         <Box
                             noWrap
@@ -57,7 +58,7 @@ export default function Navbar() {
                             sx={{ flexGrow: 1, display: 'block' }}
                             className="text-end text-md-start transition-3"
                         >
-                            <Link href="/" className="transition-3">
+                            <Link href="#" className="transition-3">
                                 <Image
                                     src="/logo.png"
                                     width={40}

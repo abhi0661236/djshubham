@@ -6,53 +6,55 @@ import Divider from '@mui/material/Divider';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ListItem from '@mui/material/ListItem';
-import { MENU_ITEMS } from '@/utils';
+import { AdminMenuItems } from '@/utils';
 import { ListItemButton, Typography } from '@mui/material';
 import Link from 'next/link'
 
 
-const Sidebar = ({anchor, onHide}) => {
+const AdminSideNav = ({ anchor, onHide }) => {
     return (
         <Box
-            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250, height: "100%"}}
+            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250, height: "100%" }}
             role="presentation"
         >
             <Box
-                sx={{width: "100%", padding: "1rem", display: 'flex', alignItems: "center", justifyContent: "space-between"}}
+                sx={{ width: "100%", padding: "1rem", display: 'flex', alignItems: "center", justifyContent: "space-between" }}
             >
                 <Typography
                     variant='h3'
-                    sx={{lineHeight: "normal"}}
+                    sx={{ lineHeight: "normal" }}
                 >
                     DJ SHUBHAM
                 </Typography>
+
                 <Image
                     src="/logo.png"
-                    width = {30}
-                    height = {30}
+                    width={30}
+                    height={30}
                     alt="logo"
                     onClick={onHide}
-                    style={{cursor: "pointer"}}
+                    style={{ cursor: "pointer" }}
                 />
+
             </Box>
             <Divider />
             <List>
-                {MENU_ITEMS.map((item, index) => (
+                {AdminMenuItems.map((item, index) => (
                     <ListItem key={JSON.stringify(item)} disablePadding onClick={onHide}>
                         <ListItemButton component={Link} href={item.base_url}>
-                            <ListItemIcon sx={{mr: 0}}>
+                            <ListItemIcon sx={{ mr: 0 }}>
                                 {
                                     item.icon.type === "icon" &&
                                     item.icon.icon
                                 }
                                 {
                                     item.icon.type === "image" &&
-                                    <Image 
-                                        src = {item.icon.url}
-                                        width = {30}
-                                        height = {30}
-                                        style = {{borderRadius: ".5rem"}}
-                                        alt = "category icon"
+                                    <Image
+                                        src={item.icon.url}
+                                        width={30}
+                                        height={30}
+                                        style={{ borderRadius: ".5rem" }}
+                                        alt="category icon"
                                     />
                                 }
                             </ListItemIcon>
@@ -66,4 +68,4 @@ const Sidebar = ({anchor, onHide}) => {
     )
 }
 
-export default Sidebar
+export default AdminSideNav

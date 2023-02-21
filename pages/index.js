@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import { Box, Typography } from '@mui/material'
+import { Box, Button } from '@mui/material'
 import Image from 'next/image';
 import NewUpdates from '@/components/home/NewUpdates';
+import { HiOutlineSearchCircle } from 'react-icons/hi';
+import { BiSearch } from 'react-icons/bi';
 
 
 
@@ -28,10 +30,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      
 
-      <main>
-        <Box sx={{ height: "auto", height: "15rem", backgroundColor: "black" }}>
+
+      <main className="container-fluid">
+        <Box sx={{ height: "auto", height: "15rem", backgroundColor: "black" }} className="mt-4">
           <Box className='banner-image'>
             <Image
               src="/img/banner2.png"
@@ -60,18 +62,38 @@ export default function Home() {
                 />
               </Box>
               <Box>
-                <div style={{color: "white", fontWeight: "500", marginBottom: "1rem"}}>DJ SHUBHAM AZAMGARH</div>
-                <div 
-                className="g-ytsubscribe" 
-                data-channelid="UC5RuAnHprD5iNk6XGViwaZw" 
-                data-layout="default" 
-                data-count="default"
+                <div style={{ color: "white", fontWeight: "500", marginBottom: "1rem" }}>DJ SHUBHAM AZAMGARH</div>
+                <div
+                  className="g-ytsubscribe"
+                  data-channelid="UC5RuAnHprD5iNk6XGViwaZw"
+                  data-layout="default"
+                  data-count="default"
                 >
                 </div>
               </Box>
             </Box>
           </Box>
 
+          <div className="w-100">
+            <div className="shadow-lg w-fit mx-auto py-2 px-5 rounded-pill">
+              <div className="d-flex align-items-center">
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  className="searchInput border-0 p-2 border-0 outline-0 text-secondary"
+                  placeholder='Search here...'
+                />
+                <BiSearch />
+              </div>
+            </div>
+
+            <div className="text-center mt-5">
+              <Button className="mx-auto bg-dark shadow-md text-light" variant='contained'>
+                Go
+              </Button>
+            </div>
+          </div>
 
           <NewUpdates />
         </Box>

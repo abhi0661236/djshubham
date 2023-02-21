@@ -13,3 +13,9 @@ export const MENU_ITEMS = [
     {title: "Contact Us", icon: {type: "icon", icon: <BsFillChatFill />}, base_url: "/contact-us"},
     {title: "About Us", icon: {type: "icon", icon: <BsInfoCircleFill />}, base_url: "/about-us"},
 ]
+
+export const AdminMenuItems = [
+    {title: "Uploads", icon: {type: "icon", icon: <FaHotjar />}, base_url: "/songs/latest-uploads"},
+    {title: "Users", icon: {type: "icon", icon: <FaHotjar />}, base_url: "/songs/latest-uploads"},
+    {title: "Logout", icon: {type: "icon", icon: <FaHotjar />}, base_url: "/songs/latest-uploads"},
+]

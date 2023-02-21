@@ -9,8 +9,8 @@ const NewUpdates = () => {
         setDate(`${date.toDateString()}`);
     }, []);
     return (
-        <div className='mt-4'>
-            <div className="py-2 px-4 bg-primary text-white rounded-top">
+        <div className='mt-5'>
+            <div className="p-2 bg-primary text-dark rounded-top border-bottom border-4 border-secondary">
                 New Updates !! {date}
             </div>
             {
