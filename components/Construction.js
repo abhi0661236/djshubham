@@ -18,7 +18,7 @@ const Construction = () => {
                     Under Construction
                 </Typography>
                 <Typography variant="body1">
-                    We are currently building this page. Please check back latter.
+                    We are currently building this page. Please check back later.
                 </Typography>
             </Box>
         </Box>

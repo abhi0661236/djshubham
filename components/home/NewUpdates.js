@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import SectionTitle from '../SectionTitle';
 import SongCard from '../SongCard';
 
 const NewUpdates = () => {
@@ -10,9 +11,7 @@ const NewUpdates = () => {
     }, []);
     return (
         <div className='mt-5'>
-            <h2 className="p-2 bg-primary text-dark rounded-top border-bottom border-4 border-secondary">
-                New Updates !! {date}
-            </h2>
+            <SectionTitle title={`New Updates !! ${date}`} />
             {
                 Array(10).fill("").map((item, index) => {
                     return (

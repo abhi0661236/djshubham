@@ -1,10 +1,11 @@
 import React from 'react'
+import Construction from '@/components/Construction'
 
 const Dashboard = () => {
     return (
-        <div>
-            Dashboard
-        </div>
+        <>
+            <Construction />
+        </>
     )
 }
 

@@ -27,14 +27,16 @@ const AdminSideNav = ({ anchor, onHide }) => {
                     DJ SHUBHAM
                 </Typography>
 
-                <Image
-                    src="/logo.png"
-                    width={30}
-                    height={30}
-                    alt="logo"
-                    onClick={onHide}
-                    style={{ cursor: "pointer" }}
-                />
+                <Link href="dashboard">
+                    <Image
+                        src="/logo.png"
+                        width={30}
+                        height={30}
+                        alt="logo"
+                        onClick={onHide}
+                        style={{ cursor: "pointer" }}
+                    />
+                </Link>
 
             </Box>
             <Divider />

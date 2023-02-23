@@ -1,12 +1,12 @@
 import React from 'react';
 import Construction from '@/components/Construction';
 
-const Users = () => {
+const PostDetails = () => {
   return (
-    <>
-      <Construction />
-    </>
+    <div>
+        <Construction />
+    </div>
   )
 }
 
-export default Users
+export default PostDetails

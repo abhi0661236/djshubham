@@ -56,12 +56,7 @@ export default function AdminNav() {
                             sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', gap: "1rem", justifyContent: "end"}}
                             className="text-end transition-3"
                         >
-                            <Box
-                                className="text-dark"
-                            >
-                                Upload
-                            </Box>
-                            <Link href="#" className="transition-3">
+                            <Link href="dashboard" className="transition-3">
                                 <Image
                                     src="/logo.png"
                                     width={40}
