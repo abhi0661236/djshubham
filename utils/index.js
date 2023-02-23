@@ -1,6 +1,8 @@
 import {FaHotjar} from 'react-icons/fa';
 import {BsInfoCircleFill, BsFillChatFill} from'react-icons/bs';
 import {MdLibraryMusic} from 'react-icons/md';
+import { FaUsers } from 'react-icons/fa';
+import {ImFolderUpload, ImExit} from 'react-icons/im'
 
 
 export const MENU_ITEMS = [
@@ -15,7 +17,7 @@ export const MENU_ITEMS = [
 ]
 
 export const AdminMenuItems = [
-    {title: "Uploads", icon: {type: "icon", icon: <FaHotjar />}, base_url: "/songs/latest-uploads"},
-    {title: "Users", icon: {type: "icon", icon: <FaHotjar />}, base_url: "/songs/latest-uploads"},
-    {title: "Logout", icon: {type: "icon", icon: <FaHotjar />}, base_url: "/songs/latest-uploads"},
+    {title: "Uploads", icon: {type: "icon", icon: <ImFolderUpload />}, base_url: "/admin/uploads"},
+    {title: "Users", icon: {type: "icon", icon: <FaUsers />}, base_url: "/admin/users"},
+    {title: "Logout", icon: {type: "icon", icon: <ImExit />}, base_url: "#"},
 ]

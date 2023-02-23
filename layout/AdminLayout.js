@@ -1,10 +1,14 @@
 import React from 'react'
 import AdminNav from '@/components/admin/AdminNav'
 
-const AdminLayout = ({ children }) => {
+const AdminLayout = ({ children, pathname }) => {
+
     return (
         <>
-            <AdminNav />
+            {
+                pathname === "/admin/login" ? <></> :
+                    <AdminNav />
+            }
             {children}
         </>
     )

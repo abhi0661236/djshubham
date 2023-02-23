@@ -10,9 +10,9 @@ const NewUpdates = () => {
     }, []);
     return (
         <div className='mt-5'>
-            <div className="p-2 bg-primary text-dark rounded-top border-bottom border-4 border-secondary">
+            <h2 className="p-2 bg-primary text-dark rounded-top border-bottom border-4 border-secondary">
                 New Updates !! {date}
-            </div>
+            </h2>
             {
                 Array(10).fill("").map((item, index) => {
                     return (

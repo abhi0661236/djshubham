@@ -1,13 +1,22 @@
 import { Button } from "@mui/material"
+import { useRouter } from "next/router"
 
 const Login = () => {
+    const router = useRouter();
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+        router.push("/admin/dashboard");
+    }
+
+
     return (
         <main className='container-fluid'>
             <div className="container d-flex align-items-center justify-content-center" style={{ height: "90vh" }}>
-                <div className="w-100 shadow-lg  p-5 rounded-5" style={{maxWidth: "30rem"}}>
+                <div className="w-100 shadow-lg  p-5 rounded-5" style={{ maxWidth: "30rem" }}>
                     <form>
                         <h1 className='text-center mb-1'>Admin Login</h1>
-                        <hr className='w-25 mx-auto bg-danger mb-5' style={{height: "2px"}} />
+                        <hr className='w-25 mx-auto bg-danger mb-5' style={{ height: "2px" }} />
                         <div className="form-group mb-3">
                             <label htmlFor="email" className="form-label">Email Id</label>
                             <input
@@ -30,7 +39,11 @@ const Login = () => {
                         </div>
 
                         <div className="text-center mt-4">
-                            <Button variant="contained" className="bg-dark text-light">Login</Button>
+                            <Button
+                                variant="contained"
+                                className="bg-dark text-light"
+                                onClick={(e) => handleLogin(e)}
+                            >Login</Button>
                         </div>
                     </form>
                 </div>

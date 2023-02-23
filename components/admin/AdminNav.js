@@ -40,7 +40,6 @@ export default function AdminNav() {
                             aria-label="open drawer"
                             sx={{ mr: 0, cursor: "pointer" }}
                             onClick={toggleDrawer(true)}
-                            className="d-md-none"
                         >
                             <HiMenuAlt1 style={{ color: "var(--icon-color-dark)", width: "2.5rem", height: "2.5rem" }} />
                         </IconButton>
@@ -53,11 +52,15 @@ export default function AdminNav() {
                             <AdminSideNav onHide={() => setSidebar(false)} anchor="left" />
                         </SwipeableDrawer>
                         <Box
-                            noWrap
                             component="div"
-                            sx={{ flexGrow: 1, display: 'block' }}
-                            className="text-end text-md-start transition-3"
+                            sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', gap: "1rem", justifyContent: "end"}}
+                            className="text-end transition-3"
                         >
+                            <Box
+                                className="text-dark"
+                            >
+                                Upload
+                            </Box>
                             <Link href="#" className="transition-3">
                                 <Image
                                     src="/logo.png"
@@ -65,17 +68,6 @@ export default function AdminNav() {
                                     height={40}
                                     alt="logo"
                                 />
-                            </Link>
-                        </Box>
-                        <Box className="d-flex align-items-center d-none d-md-block text-uppercase">
-                            <Link href="#" className='me-4 text-decoration-none'>
-                                Popular
-                            </Link>
-                            <Link href="#" className='me-4 text-decoration-none'>
-                                Contact Us
-                            </Link>
-                            <Link href="#" className="text-decoration-none">
-                                About Us
                             </Link>
                         </Box>
                     </Toolbar>

@@ -62,7 +62,7 @@ export default function Home() {
                 />
               </Box>
               <Box>
-                <div style={{ color: "white", fontWeight: "500", marginBottom: "1rem" }}>DJ SHUBHAM AZAMGARH</div>
+                <h1 style={{ color: "white", fontWeight: "500", marginBottom: "1rem" }}>DJ SHUBHAM AZAMGARH</h1>
                 <div
                   className="g-ytsubscribe"
                   data-channelid="UC5RuAnHprD5iNk6XGViwaZw"

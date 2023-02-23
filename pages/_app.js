@@ -5,18 +5,14 @@ import Script from 'next/script';
 import AdminLayout from '@/layout/AdminLayout';
 
 export default function App({ Component, pageProps, router }) {
+  const pathname = router.pathname;
 
-
-  if (router.isReady) {
-    const pathname = router.state.pathname;
-
-    if (pathname.startsWith('/admin')) {
-      return (
-        <AdminLayout>
-          <Component {...pageProps} />
-        </AdminLayout>
-      )
-    }
+  if (pathname.startsWith('/admin')) {
+    return (
+      <AdminLayout pathname={pathname}>
+        <Component {...pageProps} />
+      </AdminLayout>
+    )
   }
 
 
