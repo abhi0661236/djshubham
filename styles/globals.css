@@ -129,12 +129,33 @@ ul {
 }
 
 .grid-md{
-  grid-template-columns: repeat(auto-fill, minmax(clamp(20rem, calc(25rem + 1vw), 30rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(calc(25rem + 1vw), 1fr));
 }
-
+.grid-lg{
+  grid-template-columns: repeat(auto-fill, minmax(calc(40rem + 1vw), 1fr));
+}
 .grid-card{ 
   grid-template-columns: repeat(auto-fill, minmax(calc(15rem + 5vw), 1fr));
 }
+
+
 .square-card{
-  
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.square-card>div:first-child{
+    width: 30%;
+    height: 100%;
+    aspect-ratio: 4/3;
+}
+.square-card>div:last-child{
+  width: 70%;
+}
+
+.square-card:hover{
+  box-shadow: 0rem 1rem 1.2rem rgb(230, 230, 230);
+}
+.square-card:hover a{
+  text-decoration: underline !important;
 }

@@ -4,7 +4,7 @@ import SectionTitle from '@/components/SectionTitle';
 import Button from '@mui/material/Button';
 import { MdOutlineLibraryAdd } from 'react-icons/md';
 import MyModal from '@/components/MyModal';
-import FormGroup from '@mui/material/FormGroup'
+import SearchBox from '@/components/SearchBox';
 
 const Uploads = () => {
     const [addModal, showAddModal] = useState(false);
@@ -38,9 +38,10 @@ const Uploads = () => {
             </MyModal>
             <section className='container-fluid pt-4'>
                 <SectionTitle title="Your Uploads">
+                    <SearchBox border={true} inputClassName="py-0"/>
                     <Button onClick={() => showAddModal(true)}><MdOutlineLibraryAdd style={{ width: "3rem", height: "3rem" }} /></Button>
                 </SectionTitle>
-                <div className='grid grid-card mt-4'>
+                <div className='grid grid-lg mt-4'>
                     {
                         Array(8).fill("").map((_, i) => {
                             return (
