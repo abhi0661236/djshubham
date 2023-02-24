@@ -44,7 +44,7 @@ const Uploads = () => {
                     {
                         Array(8).fill("").map((_, i) => {
                             return (
-                                <SongCard2 data={{ base_url: "song-title" }} />
+                                <SongCard2 key={i} data={{ base_url: "song-title" }} />
                             )
                         })
                     }
