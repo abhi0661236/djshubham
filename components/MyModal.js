@@ -11,10 +11,11 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: "fit-content",
+    width: {xs: "100%", md: "60%"},
     bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
+    border: '1px solid var(--theme-secondary)',
+    boxShadow: '0px 0px 20px var(--color-dark)',
+    borderRadius: '1.5rem',
     p: 2,
 };
 

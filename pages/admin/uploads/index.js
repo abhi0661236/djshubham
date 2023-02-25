@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import { MdOutlineLibraryAdd } from 'react-icons/md';
 import MyModal from '@/components/MyModal';
 import SearchBox from '@/components/SearchBox';
+import UploadForm from '@/components/admin/UploadForm';
 
 const Uploads = () => {
     const [addModal, showAddModal] = useState(false);
@@ -13,28 +14,7 @@ const Uploads = () => {
     return (
         <>
             <MyModal show={addModal} onClose={() => showAddModal(false)} title="Upload Song">
-                <form style={{width: "50rem"}}>
-                    <div className='mb-3'>
-                        <label htmlFor="title" className="form-label">Song Title</label>
-                        <input type="text" name="title" id="title" className="form-control" />
-                    </div>
-                    <div className='mb-3'>
-                        <label htmlFor="title" className="form-label">Song Title</label>
-                        <input type="text" name="title" id="title" className="form-control" />
-                    </div>
-                    <div className='mb-3'>
-                        <label htmlFor="title" className="form-label">Song Title</label>
-                        <input type="text" name="title" id="title" className="form-control" />
-                    </div>
-                    <div className='mb-3'>
-                        <label htmlFor="title" className="form-label">Song Title</label>
-                        <input type="text" name="title" id="title" className="form-control" />
-                    </div>
-                    <div className='mb-3'>
-                        <label htmlFor="title" className="form-label">Song Title</label>
-                        <input type="text" name="title" id="title" className="form-control" />
-                    </div>
-                </form>
+                <UploadForm />
             </MyModal>
             <section className='container-fluid pt-4'>
                 <SectionTitle title="Your Uploads">
